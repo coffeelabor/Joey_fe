@@ -1,0 +1,40 @@
+// a {
+    // background-color: #18121e;
+    // color: #233237;
+    // color: red;
+    // }
+.header {
+    padding: 1rem 0 3rem;
+}
+
+.title{
+    // color: #18121e;
+    color: blue;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navItem {
+    
+    // color: #233237;
+    color: gray;
+    font-size: .9rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    // color: #18121e;
+    color: red;
+}
+
+.activeNavItem{
+    color: chartreuse;
+}
+
