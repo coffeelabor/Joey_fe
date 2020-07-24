@@ -1,18 +1,18 @@
 import React from 'react'
-import Footer from '../components/footer'
-import Header from '../components/header'
+
+import Layout from '../components/layout'
 
 
 const AboutPage = () => {
     return (
-        <div>
-            <Header />
+        <Layout>
+            
             <h1>About me page</h1>
             <p>
                 Here is some filler text
             </p>
-            <Footer />
-        </div>
+            
+        </Layout>
     )
 }
 
