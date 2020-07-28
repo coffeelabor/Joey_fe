@@ -7,19 +7,35 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Learning Gatsby',
-    author: 'me'
+    title: "Learning Gatsby",
+    author: "me",
   },
 
   plugins: [
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+              ignoreFileExtensions: []
+            }
+          }
+        ]
       }
     },
-    'gatsby-transformer-remark'
   ],
 }
